@@ -1,6 +1,5 @@
 # LZ4++
-A very simple wrapper for LZ4, in modern C++
----
+## A very simple wrapper for LZ4, in modern C++
 
 I had a few headaches trying to use LZ4 with modern C++, mostly bounding issues with the null termination byte.
 
