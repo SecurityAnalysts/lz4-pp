@@ -27,3 +27,4 @@ namespace lz4 {
 		return decompressed;
 	}
 }
+
