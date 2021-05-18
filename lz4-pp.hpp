@@ -21,6 +21,7 @@ namespace lz4 {
 	template<format fmt = format::txt>
 	std::string decompress(const std::string& compressed, const std::size_t& original_length) {
 		std::string decompressed(original_length, 0);
+		
 		LZ4_decompress_safe(compressed.data(), decompressed.data(), compressed.size(), original_length + (fmt == format::txt));
 
 		return decompressed;
