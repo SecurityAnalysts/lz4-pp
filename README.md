@@ -31,7 +31,7 @@ const std::string binary = "some binary data";
 const std::string compressed = lz4::compress<lz4::format::bin>(binary);
 const std::string decompressed = lz4::decompress<lz4::format::bin>(compressed, binary.size());
 
-if (decompressed == text) {
+if (decompressed == binary) {
   std::cout << "machine mode bzzt\n";
 }
 else {
